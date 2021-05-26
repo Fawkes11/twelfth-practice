@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="info">
+      <h1 class="main__tittle">Learn to code by watching others</h1>
+      <p class="main__info">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="register">
+      <div class="promo">
+        <p class="promo__info">Try it free 7 days <span class="soft__text">then $20/mo. thereafter</span></p>
+      </div>
+      <div class="register__section">
+        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+        <p class="msg__alert" id="firstn">First Name cannot be empty</p>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <p class="msg__alert" id="lastn">Last Name cannot be empty</p>
+        <input type="text" name="email" id="email"  placeholder="Email Address">
+        <p class="msg__alert" id="emailempty">Email cannot be empty</p>
+        <p class="msg__alert" id="emailverf">Looks like this is not an email</p>
+        <input type="password" name="password" id="password"  placeholder="Password">
+        <p class="msg__alert" id="pass__msg">Password cannot be empty</p>
+        <input type="button" value="Claim your free trial" id="btn__free" onclick="validarcampos(firstname.value,lastname.value,email.value,password.value)">
+        <p class="terms">By clicking the button, you are agreeing to our <span class="termservices">Terms and Services</span></p>
+      </div>
+    </div>
+  </div>
+
+
+   
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>
