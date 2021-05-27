@@ -28,14 +28,37 @@
         <p class="promo__info">Try it free 7 days <span class="soft__text">then $20/mo. thereafter</span></p>
       </div>
       <div class="register__section">
-        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+
+        <div class="input__container">
+          <input type="text" name="firstname" id="firstname" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="" class="icon__error" id="fnm">
+        </div>
+        
         <p class="msg__alert" id="firstn">First Name cannot be empty</p>
-        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+
+        <div class="input__container">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="" class="icon__error" id="lnm">
+        </div>
+
+        
         <p class="msg__alert" id="lastn">Last Name cannot be empty</p>
-        <input type="text" name="email" id="email"  placeholder="Email Address">
+
+        <div class="input__container">
+          <input type="text" name="email" id="email"  placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="" class="icon__error" id="ema">
+        </div>
+
+        
         <p class="msg__alert" id="emailempty">Email cannot be empty</p>
         <p class="msg__alert" id="emailverf">Looks like this is not an email</p>
-        <input type="password" name="password" id="password"  placeholder="Password">
+
+        <div class="input__container">
+          <input type="password" name="password" id="password"  placeholder="Password">
+          <img src="./images/icon-error.svg" alt="" class="icon__error" id="pss">
+        </div>
+
+        
         <p class="msg__alert" id="pass__msg">Password cannot be empty</p>
         <input type="button" value="Claim your free trial" id="btn__free" onclick="validarcampos(firstname.value,lastname.value,email.value,password.value)">
         <p class="terms">By clicking the button, you are agreeing to our <span class="termservices">Terms and Services</span></p>
